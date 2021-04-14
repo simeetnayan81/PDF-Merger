@@ -1,5 +1,5 @@
 '''This code merges all the pdf files in the current directory into a new pdf document.
-The files to be merged should be named in the order 0.pdf, 1.pdf, 2.pdf.....and so on''' 
+The files to be merged should be named in the order 1.pdf, 2.pdf, 3.pdf.....and so on''' 
 
 #imports pyPDF2 Library
 import os
@@ -14,7 +14,7 @@ l=len(pdflst)#number of pdfs in the current directory
 pdfWriter = PyPDF2.PdfFileWriter()
 #loop through all the files present in the directory
 for i in range(l):
-	#open the file to be merged one by one. The files must be saved in order 0.pdf, 1.pdf, 2.pdf.....so on 
+	#open the file to be merged one by one. The files must be saved in order 1.pdf, 2.pdf, 3.pdf.....so on 
 	pdfInputFile = open(str(i+1)+'.pdf', 'rb')
 	# Read the files that you have opened
 	pdfReader = PyPDF2.PdfFileReader(pdfInputFile) 
